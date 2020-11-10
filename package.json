@@ -1,0 +1,16 @@
+{
+  "name": "Landie",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/otaviojneto/Landie.git",
+  "author": "Otavio Neto <otaviojnetoo@gmail.com>",
+  "license": "ISC",
+  "scripts": {
+    "build-css": "node-sass --include-path scss scss/styles.scss public/css/styles.css",
+    "watch-css": "nodemon -e scss -x \"yarn build-css\""
+  },
+  "devDependencies": {
+    "node-sass": "^5.0.0",
+    "nodemon": "^2.0.6"
+  }
+}

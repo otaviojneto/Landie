@@ -1,6 +1,8 @@
-@import './base/global';
-@import './base/grid';
-@import './base/colors';
-@import './components/navigation';
-@import './components/button';
-@import './components/hero'
+@import './base/global.scss';
+@import './base/grid.scss';
+@import './base/colors.scss';
+@import './base/text.scss';
+@import './components/navigation.scss';
+@import './components/button.scss';
+@import './components/hero.scss';
+@import './components/info.scss';

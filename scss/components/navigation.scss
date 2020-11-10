@@ -1,8 +1,19 @@
 .navigation {
-  align-items: center;
-  display: flex;
-  justify-content: space-between;
-  margin-top: 60px;
+  position: absolute;
+  left: 0%;
+  right: 0%;
+  top: 5%;
+
+  .container {
+
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &:before {
+    background-image: url('../assets/designer_1.png')
+  }
 
   .menu {
     display: flex;

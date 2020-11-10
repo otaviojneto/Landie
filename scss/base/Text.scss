@@ -1,7 +1,16 @@
-.text {
-    width: 539px;
-    height: 132px;
+.title {
     font-weight: 500;
     font-size: 50px;
+    height: 132px;
     line-height: 66px;
+    margin-bottom: 20px;
+    margin-top: 40px;
+    width: 539px;
+}
+
+
+.text {
+    color: $bluelion;
+    font-size: 18px;
+    line-height: 30px;
 }
