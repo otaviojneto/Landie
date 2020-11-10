@@ -1,10 +1,30 @@
 .navigation {
-  padding: 67px 0 0 126px;
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 60px;
 
-}
-
-.menu {
+  .menu {
     display: flex;
-    justify-content: space-around;
-}
 
+    .item {
+      margin-right: 60px;
+
+      &:last-of-type {
+        margin-right: 0;
+      }
+    }
+  }
+
+  .logo {
+    height: 38px;
+    font-Size: 26px;
+    font-weight: 900;
+    line-height: 38px;
+    width: 79px;
+
+
+  }
+
+
+}
