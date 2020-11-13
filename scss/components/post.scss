@@ -1,14 +1,29 @@
 .post {
     padding-top: 122px;
-    padding-bottom: 162px;
+    padding-bottom: 116px;
 
-    .text {
-        color: $black;
-        margin-bottom: 40px;
-    }
+    .item {
+        align-items: center;
+        margin-bottom: 220px;
 
-    .btn {
-        padding: 12px 50px;
+        .title {
+            margin: 0;
+            margin-bottom: 16px;
+        }
+
+        .text {
+            font-size: 16px;
+            line-height: 26px;
+        }
+
+        .btn {
+            margin-top: 40px;
+            width: 150px;
+        }
+
+        &:last-of-type {
+            margin-bottom: 0;
+        }
     }
 }
 

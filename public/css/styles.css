@@ -404,16 +404,17 @@ a:active {
     line-height: 38px; }
 
 .btn, .btn-outline {
+  align-items: center;
   background-color: #111b47;
   border: 2px solid #111b47;
   border-radius: 2px;
   color: #fff;
-  display: inline-block;
+  display: flex;
   font-weight: 500;
-  font-size: 12px;
-  height: 26px;
-  line-height: 18px;
-  padding: 4px;
+  font-size: 16px;
+  height: 36px;
+  justify-content: center;
+  line-height: 26px;
   text-align: center;
   width: 160px; }
   .btn-outline {
@@ -438,14 +439,16 @@ a:active {
     margin-bottom: 20px; }
   .hero .text {
     margin-bottom: 70px; }
-  .hero .box-buttons .btn, .hero .box-buttons .btn-outline {
-    margin-right: 30px;
-    width: 190px; }
-    @media (max-width: 567px) {
-      .hero .box-buttons .btn, .hero .box-buttons .btn-outline {
-        margin-bottom: 16px; } }
-    .hero .box-buttons .btn-outline {
-      margin-right: 0; }
+  .hero .box-buttons {
+    display: flex; }
+    .hero .box-buttons .btn, .hero .box-buttons .btn-outline {
+      margin-right: 30px;
+      width: 190px; }
+      @media (max-width: 567px) {
+        .hero .box-buttons .btn, .hero .box-buttons .btn-outline {
+          margin-bottom: 16px; } }
+      .hero .box-buttons .btn-outline {
+        margin-right: 0; }
 
 .info-image {
   padding: 108px 0; }
@@ -479,12 +482,21 @@ a:active {
 
 .post {
   padding-top: 122px;
-  padding-bottom: 162px; }
-  .post .text {
-    color: #091133;
-    margin-bottom: 40px; }
-  .post .btn, .post .btn-outline {
-    padding: 12px 50px; }
+  padding-bottom: 116px; }
+  .post .item {
+    align-items: center;
+    margin-bottom: 220px; }
+    .post .item .title {
+      margin: 0;
+      margin-bottom: 16px; }
+    .post .item .text {
+      font-size: 16px;
+      line-height: 26px; }
+    .post .item .btn, .post .item .btn-outline {
+      margin-top: 40px;
+      width: 150px; }
+    .post .item:last-of-type {
+      margin-bottom: 0; }
 
 .post-img {
   max-width: 446px;
