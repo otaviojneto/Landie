@@ -1,14 +1,50 @@
 .hero {
     align-items: center;
-    background-image: url(../assets/designer_1.png);
-    background-position: right;
+    background-position: top right;
     background-repeat: no-repeat;
-    background-size: 50%;
+    background-size: contain;
     display: flex;
     height: 100vh;
     justify-content: center;
+    
+    @media (min-width: 768px) {
+        background-image: url(../assets/designer_1.png);
+    }
+
+    .title {
+        font-size: 50px;
+        height: 132px;
+        line-height: 66px;
+        margin-bottom: 56px;
+    }
+
+
+
 
     .text {
         line-height: 26px;
+        padding-bottom: 76px;
     }
+
+    .btn {
+        border-radius: 4px;
+        padding: 8px 34px;
+    }
+    
+    .btn1 {
+        background-color: transparent;
+        border: 2px solid $primary;
+        border-radius: 4px;
+        color: $primary;
+        font-weight: 600;
+        font-size: 12px;
+        height: 26px;
+        line-height: 18px;
+        margin-left: 30px;
+        padding: 6px 44px;
+        text-align: center;
+        width: 160px;
+    }
+
+
 }

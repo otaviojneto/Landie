@@ -7,6 +7,11 @@
         padding: 0;
     }
 
+    html {
+        // move a pag mais devagar
+        scroll-behavior: smooth;   
+    }
+
     ul {
         list-style: none;
     }
@@ -17,4 +22,10 @@
 
     textarea {
         resize: none;
+    }
+
+    a {
+        &:active {
+            color: inherit;
+        }
     }

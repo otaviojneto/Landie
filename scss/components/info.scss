@@ -1,20 +1,49 @@
 .info-image {
-    background-image: url('../../public/assets/image.png');
-    background-repeat: no-repeat;
-    background-position: right;
-}
+    padding-top: 108px;
+    padding-bottom: 108px;
+
+    .info-img {
+        max-width: 445px;
+        width: 100%;
+    }
 
 
-.title {
+    .title {
     font-size: 36px;
     line-height: 48px;
     letter-spacing: 1px;  
-    height: 48px;  
+    height: 48px; 
+    margin-bottom: 34px; 
 }
 
 
 .text-info {
     font-size: 16px;
     line-height: 26px;
+    margin-bottom: 60px;
+
+}
+
+.card {
+    background-image: url('../../public/assets/card.png');
+    background-repeat: no-repeat;
+    margin-bottom: 18px;
+    padding-left: 0;
+
+    .title-card {
+        margin-top: 50px;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 26px;
+    }
+
+    .text-card {
+        margin-top: 18px;
+        font-size: 14px;
+        line-height: 18px;
+    }
+}
+
+
 
 }
