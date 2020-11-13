@@ -1,7 +1,7 @@
 * {
   border: 0;
   box-sizing: border-box;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   margin: 0;
   outline: none !important;
   padding: 0; }
@@ -367,54 +367,58 @@ a:active {
 .title {
   font-size: 36px;
   font-weight: 500;
-  height: 48px;
-  margin-bottom: 34px;
-  margin-top: 40px;
-  line-height: 48px;
   letter-spacing: 1px;
-  width: 539px; }
+  line-height: 48px;
+  margin-bottom: 34px;
+  margin-top: 40px; }
 
 .text {
-  color: #505F98;
+  color: #505f98;
   font-size: 18px;
   line-height: 30px; }
 
 .navigation {
+  height: 60px;
+  left: 0;
   position: absolute;
-  left: 0%;
-  right: 0%;
-  top: 5%; }
+  top: 0;
+  width: 100%; }
   .navigation .container {
     align-items: center;
     display: flex;
+    height: 100%;
     justify-content: space-between; }
-  .navigation:before {
-    background-image: url("../assets/designer_1.png"); }
   .navigation .menu {
     display: flex; }
     .navigation .menu .item {
       margin-right: 60px; }
       .navigation .menu .item:last-of-type {
         margin-right: 0; }
+      .navigation .menu .item .link {
+        color: #505f98; }
   .navigation .logo {
-    height: 38px;
-    font-Size: 26px;
+    color: #37447e;
+    font-size: 26px;
     font-weight: 900;
-    line-height: 38px;
-    width: 79px;
-    color: #37447E; }
+    height: 38px;
+    line-height: 38px; }
 
-.btn {
-  background: #111B47;
+.btn, .btn-outline {
+  background-color: #111b47;
+  border: 2px solid #111b47;
   border-radius: 2px;
   color: #fff;
-  font-weight: 600;
+  display: inline-block;
+  font-weight: 500;
   font-size: 12px;
   height: 26px;
   line-height: 18px;
-  width: 160px;
+  padding: 4px;
   text-align: center;
-  padding-top: 4px; }
+  width: 160px; }
+  .btn-outline {
+    background-color: transparent;
+    color: #111b47; }
 
 .hero {
   align-items: center;
@@ -428,29 +432,20 @@ a:active {
     .hero {
       background-image: url(../assets/designer_1.png); } }
   .hero .title {
+    color: #091133;
     font-size: 50px;
-    height: 132px;
     line-height: 66px;
-    margin-bottom: 56px; }
+    margin-bottom: 20px; }
   .hero .text {
-    line-height: 26px;
-    padding-bottom: 76px; }
-  .hero .btn {
-    border-radius: 4px;
-    padding: 8px 34px; }
-  .hero .btn1 {
-    background-color: transparent;
-    border: 2px solid #222F65;
-    border-radius: 4px;
-    color: #222F65;
-    font-weight: 600;
-    font-size: 12px;
-    height: 26px;
-    line-height: 18px;
-    margin-left: 30px;
-    padding: 6px 44px;
-    text-align: center;
-    width: 160px; }
+    margin-bottom: 70px; }
+  .hero .box-buttons .btn, .hero .box-buttons .btn-outline {
+    margin-right: 30px;
+    width: 190px; }
+    @media (max-width: 567px) {
+      .hero .box-buttons .btn, .hero .box-buttons .btn-outline {
+        margin-bottom: 16px; } }
+    .hero .box-buttons .btn-outline {
+      margin-right: 0; }
 
 .info-image {
   padding-top: 108px;
@@ -489,7 +484,7 @@ a:active {
   .post .text {
     color: #091133;
     margin-bottom: 40px; }
-  .post .btn {
+  .post .btn, .post .btn-outline {
     padding: 12px 50px; }
 
 .post-img {
@@ -518,12 +513,12 @@ a:active {
     font-size: 50px;
     line-height: 66px;
     text-align: center;
-    color: #222F65; }
+    color: #222f65; }
   .back-end .coments {
     text-align: center;
-    color: #222F65;
+    color: #222f65;
     margin-bottom: 13px; }
-  .back-end .btn {
+  .back-end .btn, .back-end .btn-outline {
     align-items: center;
     padding: 4px 30px;
     border-radius: 4px;
@@ -531,21 +526,21 @@ a:active {
     margin: auto; }
 
 .footer {
-  background-color: #E7ECFF;
+  background-color: #e7ecff;
   padding-top: 60px;
   display: flex; }
   .footer .text {
     font-size: 14px;
     line-height: 24px; }
   .footer .logo {
-    color: #37447E; }
-  .footer .btn {
+    color: #37447e; }
+  .footer .btn, .footer .btn-outline {
     border-radius: 4px; }
   .footer .copyright {
     align-items: center;
     display: flex;
     justify-content: space-between;
-    border-bottom: 1px solid #CDD1D4;
+    border-bottom: 1px solid #cdd1d4;
     padding-bottom: 32px; }
     @media (max-width: 576px) {
       .footer .copyright {
@@ -569,7 +564,7 @@ a:active {
       justify-content: space-between; }
     .footer .links .item {
       margin-right: 40px;
-      color: #222F65;
+      color: #222f65;
       font-size: 14px;
       line-height: 24px; }
       .footer .links .item:last-of-type {

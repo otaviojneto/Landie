@@ -1,8 +1,7 @@
 .back-end {
-    background-image: url('../../public/assets/fundofin.png');
+    background-image: url("../../public/assets/fundofin.png");
     background-repeat: no-repeat;
     padding-bottom: 176px;
-    
 
     .title-back {
         padding-top: 237px;
@@ -35,13 +34,11 @@
         margin-bottom: 13px;
     }
 
-      .btn {
-          align-items: center;
-          padding: 4px 30px;
-          border-radius: 4px;
-          display: block;
-          margin:  auto;
-      }
-
-
+    .btn {
+        align-items: center;
+        padding: 4px 30px;
+        border-radius: 4px;
+        display: block;
+        margin: auto;
+    }
 }

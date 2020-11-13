@@ -1,42 +1,38 @@
 .navigation {
-  position: absolute;
-  left: 0%;
-  right: 0%;
-  top: 5%;
+    height: 60px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
 
-  .container {
-
-    align-items: center;
-    display: flex;
-    justify-content: space-between;
-  }
-
-  &:before {
-    background-image: url('../assets/designer_1.png')
-  }
-
-  .menu {
-    display: flex;
-
-    .item {
-      margin-right: 60px;
-
-      &:last-of-type {
-        margin-right: 0;
-      }
+    .container {
+        align-items: center;
+        display: flex;
+        height: 100%;
+        justify-content: space-between;
     }
-  }
 
-  .logo {
-    height: 38px;
-    font-Size: 26px;
-    font-weight: 900;
-    line-height: 38px;
-    width: 79px;
-    color: $logo;
+    .menu {
+        display: flex;
 
+        .item {
+            margin-right: 60px;
 
-  }
+            &:last-of-type {
+                margin-right: 0;
+            }
 
+            .link {
+                color: $bluelion;
+            }
+        }
+    }
 
+    .logo {
+        color: $logo;
+        font-size: 26px;
+        font-weight: 900;
+        height: 38px;
+        line-height: 38px;
+    }
 }
