@@ -1,43 +1,52 @@
 .info-image {
-    padding-top: 108px;
-    padding-bottom: 108px;
-
-    .info-img {
-        max-width: 445px;
-        width: 100%;
-    }
+    padding: 108px 0;
 
     .title {
-        font-size: 36px;
-        line-height: 48px;
-        letter-spacing: 1px;
-        height: 48px;
-        margin-bottom: 34px;
+        margin-top: 0;
     }
 
-    .text-info {
+    .text {
         font-size: 16px;
         line-height: 26px;
-        margin-bottom: 60px;
+        margin-bottom: 80px;
+    }
+
+    .container {
+        & > .row {
+            align-items: center;
+
+            .row {
+                padding: 0 16px;
+            }
+        }
     }
 
     .card {
-        background-image: url("../../public/assets/card.png");
-        background-repeat: no-repeat;
-        margin-bottom: 18px;
-        padding-left: 0;
+        color: $black;
 
-        .title-card {
-            margin-top: 50px;
+        &:first-of-type {
+            padding-left: 0;
+        }
+
+        &-img {
+            margin-bottom: 14px;
+        }
+
+        &-title {
             font-weight: 500;
             font-size: 16px;
             line-height: 26px;
+            margin-bottom: 6px;
         }
 
-        .text-card {
-            margin-top: 18px;
-            font-size: 14px;
+        &-text {
+            font-size: 12px;
             line-height: 18px;
         }
+    }
+
+    .info-img {
+        max-width: 540px;
+        width: 100%;
     }
 }

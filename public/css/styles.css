@@ -448,35 +448,34 @@ a:active {
       margin-right: 0; }
 
 .info-image {
-  padding-top: 108px;
-  padding-bottom: 108px; }
-  .info-image .info-img {
-    max-width: 445px;
-    width: 100%; }
+  padding: 108px 0; }
   .info-image .title {
-    font-size: 36px;
-    line-height: 48px;
-    letter-spacing: 1px;
-    height: 48px;
-    margin-bottom: 34px; }
-  .info-image .text-info {
+    margin-top: 0; }
+  .info-image .text {
     font-size: 16px;
     line-height: 26px;
-    margin-bottom: 60px; }
+    margin-bottom: 80px; }
+  .info-image .container > .row {
+    align-items: center; }
+    .info-image .container > .row .row {
+      padding: 0 16px; }
   .info-image .card {
-    background-image: url("../../public/assets/card.png");
-    background-repeat: no-repeat;
-    margin-bottom: 18px;
-    padding-left: 0; }
-    .info-image .card .title-card {
-      margin-top: 50px;
+    color: #091133; }
+    .info-image .card:first-of-type {
+      padding-left: 0; }
+    .info-image .card-img {
+      margin-bottom: 14px; }
+    .info-image .card-title {
       font-weight: 500;
       font-size: 16px;
-      line-height: 26px; }
-    .info-image .card .text-card {
-      margin-top: 18px;
-      font-size: 14px;
+      line-height: 26px;
+      margin-bottom: 6px; }
+    .info-image .card-text {
+      font-size: 12px;
       line-height: 18px; }
+  .info-image .info-img {
+    max-width: 540px;
+    width: 100%; }
 
 .post {
   padding-top: 122px;
