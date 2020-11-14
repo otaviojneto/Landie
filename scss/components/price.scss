@@ -1,0 +1,55 @@
+.price {
+    background-color: $back;
+    padding-top: 236px;
+    padding-bottom: 176px;
+    position: relative;
+    text-align: center;
+
+    &::before {
+        background-color: $white;
+        border-radius: 35%;
+        content: "";
+        height: 100px;
+        left: 0;
+        position: absolute;
+        top: -40px;
+        width: 100%;
+    }
+
+    .title {
+        margin: 0;
+        margin-bottom: 16px;
+        letter-spacing: 0;
+    }
+
+    .text {
+        font-size: 16px;
+        line-height: 26px;
+        max-width: 600px;
+        margin: 0 auto 36px;
+
+        &:last-of-type {
+            color: $logo;
+            margin-bottom: 60px;
+        }
+    }
+
+    .value {
+        color: $primary;
+        font-weight: 500;
+        font-size: 50px;
+        letter-spacing: 1px;
+        line-height: 66px;
+    }
+
+    .coments {
+        color: $grey;
+        font-size: 14px;
+        line-height: 24px;
+        margin-bottom: 8px;
+    }
+
+    .btn {
+        margin: 0 auto;
+    }
+}
